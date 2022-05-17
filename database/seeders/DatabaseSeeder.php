@@ -22,9 +22,30 @@ class DatabaseSeeder extends Seeder
            'email' => 'user1@gmail.com',
         ]);
         User::factory()->create([
+            'name' => 'user2',
+            'email' => 'user2@gmail.com',
+         ]);
+         User::factory()->create([
+            'name' => 'user3',
+            'email' => 'user3@gmail.com',
+         ]);
+         User::factory()->create([
+             'name' => 'user4',
+             'email' => 'user4@gmail.com',
+         ]);
+         User::factory()->create([
+            'name' => 'user5',
+            'email' => 'user5@gmail.com',
+         ]);
+
+        User::factory()->create([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
             'isAdmin' =>true,
         ]);
+
+        Grades::factory()->create([
+            '',
+        ])
     }
 }

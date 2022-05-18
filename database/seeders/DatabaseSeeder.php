@@ -43,9 +43,5 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'isAdmin' =>true,
         ]);
-
-        Grades::factory()->create([
-            '',
-        ])
     }
 }

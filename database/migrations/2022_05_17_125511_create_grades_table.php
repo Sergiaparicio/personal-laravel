@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('grades', function (Blueprint $table) {
             $table->id();
-            $table->string('grades')->min(0)->max(10);
+            $table->integer('grades');
+            $table->timestamps();
         });
     }
 
@@ -27,5 +28,10 @@ return new class extends Migration
     public function down()
     {
         Schema::dropIfExists('grades');
+    }
+
+    
+    public function grades(){
+
     }
 };

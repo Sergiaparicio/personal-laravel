@@ -16,8 +16,6 @@ return new class extends Migration
         Schema::create('teacher', function (Blueprint $table) {
             $table->id();
             $table->integer('name');
-            $table->unsignedbigInteger('course_id');
-            $table->foreign('course_id')->references('id')->on('course');
             $table->timestamps();
         });
     }

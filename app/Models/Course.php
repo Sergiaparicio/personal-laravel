@@ -15,6 +15,6 @@ class Course extends Model
     ];
 
     public function teacher(){
-        return $this->hasOne(teacher::class);
+        return $this->hasOne(Teacher::class);
     }
 }

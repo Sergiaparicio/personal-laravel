@@ -75,6 +75,7 @@ class CourseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Course::destroy($id);
+        return redirect()->route('welcome');
     }
 }

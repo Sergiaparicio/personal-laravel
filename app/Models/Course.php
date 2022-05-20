@@ -11,7 +11,7 @@ class Course extends Model
 
     protected $fillable = [
         'name',
-        'teacher_id',
+        'teachers_id',
     ];
 
     public function teacher(){

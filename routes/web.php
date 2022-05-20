@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/',[CourseController::class, 'index'])->name('welcome');
+
+Route::delete('/courses/delete/{id}', [CourseController::class, 'destroy'])->name('courses.delete')->middleware('auth','isAdmin');
 //Route::get('/', function () {
 //    return view('welcome');
 //});
